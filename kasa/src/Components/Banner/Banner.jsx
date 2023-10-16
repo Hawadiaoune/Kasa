@@ -1,5 +1,5 @@
 import React from "react";
-import "./Banner.css"
+import "./Banner.sass"
 
 function Banner({page,txt}) {
     const words = txt.split(",");

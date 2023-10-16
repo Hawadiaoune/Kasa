@@ -1,4 +1,4 @@
-import "./Tag-name.css"
+import "./Tag-name.sass"
 import React from 'react';
 
 

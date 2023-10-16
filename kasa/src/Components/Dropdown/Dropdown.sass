@@ -1,0 +1,71 @@
+
+.dropdown
+  display: flex
+  flex-direction: column
+
+  &__button
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border: 0px solid black
+    padding-left: 20px
+    padding-right: 10px
+    background: #FF6060
+    color: white
+    cursor: pointer
+    font-weight: 500
+    line-height: 142.6%
+    height: 50px
+    border-radius: 10px
+
+    &__arrow
+      margin-left: 10px
+      transition: all 0.5s
+      cursor: pointer
+
+      &--close
+        opacity: 0.5
+
+    &:hover .dropdown__button__arrow--close
+      opacity: 1
+
+  &__list
+    list-style: none
+    margin: 0
+    margin-top: -10px
+    padding-top: 15px
+    padding-bottom: 10px
+    border: 0px solid black
+    background: #F7F7F7
+    border-radius: 5px
+    z-index: -1
+    height: 0px
+    opacity: 0
+
+    &--open
+      height: auto
+      opacity: 1
+      transition: all 1s
+
+    &__item
+      padding-left: 20px
+      padding-right: 20px
+      font-weight: 400
+      font-size: 24px
+      line-height: 142.6%
+      color: #FF6060
+
+    &__button__arrow--open
+      transform: rotate(180deg)
+
+  @media all and (min-width: 0px) and (max-width: 768px)
+    &__item
+      font-weight: 400
+      font-size: 12px
+
+  &--about
+    &__button--about
+      font-size: 24px
+
+    &__button__arrow--about
+      width: 24
